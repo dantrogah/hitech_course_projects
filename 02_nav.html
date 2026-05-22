@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavBar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        padding: 20px;
+        background-color: gray;
+      }
+
+      .header ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .header li {
+        list-style-type: none;
+      }
+
+      .header a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+      }
+
+      .header a::after {
+        content: "";
+        background-color: #000;
+        width: 130%;
+        height: 3px;
+        position: absolute;
+        left: -8px;
+        bottom: -8px;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .header a:hover::after {
+        transform: scaleX(1);
+      }
+
+      .header button {
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      /* SECOND NAVIGATION */
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login_btn">Login</button></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
