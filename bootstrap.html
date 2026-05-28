@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- Carousel -->
+      <div id="carouselExample" class="carousel slide banner">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/donkey.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/lady.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/sea_side.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="cards">
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/donkey.jpg"
+            class="card-img-top"
+            alt="a boy with a donkey"
+          />
+          <div class="card-body">
+            <h5 class="card-title">The Boy with a donkey...</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=7tOLcNZfPso&list=PLRAV69dS1uWT4v4iK1h6qejyhGObFH9_o"
+              class="btn btn-primary"
+              target="_blank"
+              >Watch</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/lady.jpg"
+            class="card-img-top"
+            alt="a lady standing on the street"
+          />
+          <div class="card-body">
+            <h5 class="card-title">In the Capital...</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=2md4HQNRqJA&list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD"
+              class="btn btn-success"
+              target="_blank"
+              >Watch</a
+            >
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img src="images/sea_side.jpg" class="card-img-top" alt="Sea side" />
+          <div class="card-body">
+            <h5 class="card-title">By the Sea side...</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=s1KrFy_3LYQ"
+              class="btn btn-info"
+              target="_blank"
+              >Watch</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <p>&copy; Daniel M. Ahiatrogah</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
