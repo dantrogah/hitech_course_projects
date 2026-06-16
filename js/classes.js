@@ -1,3 +1,5 @@
+// Classes, Objects and Inheritance
+
 class Vehicle {
   constructor(make, model) {
     ((this.make = make), (this.model = model));
@@ -8,6 +10,7 @@ class Vehicle {
   }
 }
 
+// Inheritance
 class Car extends Vehicle {
   drive() {
     return `${this.model} is driving...`;
